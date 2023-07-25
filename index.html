@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript" src="./src/CounterButton.js"></script>
-    <link rel="stylesheet" href="./public/styles.css">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-     <button id="increment" onclick="incrementCount()">+</button>
-     <p id="counterValue">0</p>
-     <button id="decrement" onclick="decrementCount()">-</button>
+    <ul>
+        <li data-tab-target="#html">HTML</li>
+        <li data-tab-target="#css">CSS</li>
+        <li data-tab-target="#javascript">JavaScript</li>
+        <li data-tab-target="#react">React</li>
+    </ul>
+    <div class="tab-content">
+        <div id="html" class="html" data-tab-content>
+            <h1>HTML</h1>
+            <p>It is a Markup Language.</p>
+        </div>
+        <div id="css" class="css" data-tab-content>
+            <h1>CSS</h1>
+            <p>It is used for giving styles to Markup.</p>
+        </div>
+        <div id="javascript" class="javascript" data-tab-content>
+            <h1>JavaScript</h1>
+            <p>It is a Library giving functions to code.</p>
+        </div>
+        <div id="react" class="react" data-tab-content>
+            <h1>React</h1>
+            <p>It is a Library giving functions to code.</p>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

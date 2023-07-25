@@ -1,0 +1,38 @@
+[data-tab-content] {
+    display: none;
+}
+
+[data-tab-content].active {
+    display: block;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: rgb(123, 255, 211);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(3, 3, 3);
+}
+ul li:hover{
+    background-color: rgb(248, 249, 249);
+
+}
+.html{
+    background-color: rgb(68, 252, 255);
+    padding: 10px;
+}
+.css{
+    background-color: rgba(2, 34, 35,0.5);
+    padding: 10px;
+}
+.javascript{
+    background-color: hsl(36, 100%, 67%);
+    padding: 10px;
+}
+.react{
+    background-color: rgb(21, 117, 196);
+    padding: 10px;
+}
